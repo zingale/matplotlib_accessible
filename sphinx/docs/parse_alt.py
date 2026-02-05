@@ -21,7 +21,7 @@ def doit(filename):
 
     # now overwrite the original with the new version with the alt
     # text substituted
-    with open(backup, "r") as fin, open(filename, "w") as fout:
+    with open(backup, encoding='utf-8') as fin, open(filename, "w", encoding='utf-8') as fout:
         current_alt = None
         for line in fin:
             # check if we define an alt?
