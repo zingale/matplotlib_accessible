@@ -1,0 +1,9 @@
+format: jb-book
+root: Introduction
+parts:
+  - caption: Test notebooks
+    chapters:
+    - file: test-alt-metadata.ipynb
+    - file: test-alt-surrounding-text.ipynb
+    - file: test-alt-save-markdown.ipynb
+    - file: test-alt-comment-hack.ipynb

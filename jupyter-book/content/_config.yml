@@ -1,0 +1,46 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: "alt-text test"
+author: <a href="https://zingale.github.io">Michael Zingale</a>
+#logo: logo.png
+copyright: "2026"
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+  allow_errors: true
+
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/zingale/matplotlib_accessible
+  path_to_book: content  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: false
+  use_repository_button: false
+
+sphinx:
+  config:
+    html_show_copyright: false
+    nbsphinx_timeout: 300
+    nb_execution_timeout: 300
+  extra_extensions:
+    - jupyterbook_patches
+
+parse:
+  extensions:
+    - myst_parser
+
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - linkify
+    - colon_fence
