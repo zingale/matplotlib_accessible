@@ -1,0 +1,8 @@
+jupyter-book<2
+jupyterbook_patches
+matplotlib
+numpy
+Sphinx
+git+https://github.com/executablebooks/sphinx-book-theme.git
+sphinx-math-dollar
+
